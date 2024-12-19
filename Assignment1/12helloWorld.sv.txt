@@ -1,0 +1,19 @@
+module helloWorld;
+
+    initial begin
+        // Print characters and their ASCII values
+        $display("Printing Characters and their ASCII Code Numbers:");
+        $display("Double Quote: \"%c\" ASCII Code: %0d", 34, 34);
+        $display("Percent Character: \"%c\" ASCII Code: %0d", 37, 37);
+        $display("At Symbol: \"%c\" ASCII Code: %0d", 64, 64);
+
+        // Alternative representation using character literals
+        $display("Using Character Literals:");
+        $display("Double Quote: \"\\\"\" ASCII Code: %0d", 34);
+        $display("Percent Character: \"%%\" ASCII Code: %0d", 37);
+        $display("At Symbol: \"@\" ASCII Code: %0d", 64);
+
+        #10 $finish; // End simulation
+    end
+
+endmodule
